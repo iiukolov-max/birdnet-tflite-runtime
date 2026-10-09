@@ -1,0 +1,217 @@
+{
+  "dependencies": {
+    "abseil-cpp": {
+      "commit": "fb3621f4f897824c0dbe0615fa94543df6192f30",
+      "tracked_changes": ""
+    },
+    "cpuinfo": {
+      "commit": "ef634603954d88d2643d5809011288b890ac126e",
+      "tracked_changes": ""
+    },
+    "eigen": {
+      "commit": "c1d637433e3b3f9012b226c2c9125c494b470ae6",
+      "tracked_changes": "M bench/spbench/CMakeLists.txt\n M doc/CMakeLists.txt\n M unsupported/doc/CMakeLists.txt",
+      "patch_sha256": "c3e33a05bc7c00b3d5b1455d016d3894ff8b3f2761bb4ba177a8d015a676f9ff"
+    },
+    "farmhash": {
+      "commit": "0d859a811870d10f53a594927d0d0b97573ad06d",
+      "tracked_changes": ""
+    },
+    "flatbuffers": {
+      "commit": "e6463926479bd6b330cbcf673f7e917803fd5831",
+      "tracked_changes": ""
+    },
+    "FXdiv-source": {
+      "commit": "63058eff77e11aa15bf531df5dd34395ec3017c8",
+      "tracked_changes": ""
+    },
+    "gemmlowp": {
+      "commit": "16e8662c34917be0065110bfcd9cc27d30f52fdf",
+      "tracked_changes": ""
+    },
+    "ml_dtypes": {
+      "commit": "24084d9ed2c3d45bf83b7a9bff833aa185bf9172",
+      "tracked_changes": ""
+    },
+    "protobuf": {
+      "commit": "90b73ac3f0b10320315c2ca0d03a5a9b095d2f66",
+      "tracked_changes": ""
+    },
+    "psimd-source": {
+      "commit": "072586a71b55b7f8c584153d223e95687148a900",
+      "tracked_changes": ""
+    },
+    "ruy": {
+      "commit": "3286a34cc8de6149ac6844107dfdffac91531e72",
+      "tracked_changes": ""
+    },
+    "xnnpack": {
+      "commit": "bfea23551ac47c9d71b82120b299ff6173fc9097",
+      "tracked_changes": ""
+    },
+    "pthreadpool-header": {
+      "sha256": "2438b2613afacbdf33b124babf9ade60cf2e345ccd6ed45ce4ad8dc5926538c3",
+      "spin_wait_iterations": 1000000
+    }
+  },
+  "runtimes": {
+    "control": {
+      "binary_bytes": 7329712,
+      "sha256": "5aef6b5dc2cc0d9d9cf2e74bd6bcb4f795e1d0cb315ea61b1829155ef4e0b354",
+      "manifest": {
+        "variant": "control",
+        "tensorflow_commit": "3c92ac03cab816044f7b18a86eb86aa01a294d95",
+        "compiler": "clang version 23.1.3 (https://github.com/llvm/llvm-project.git 0d261d1ca552c95a8f007e061c787ac7132fbcbc)",
+        "configuration": [
+          "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\cmake\\cmake\\data\\bin\\cmake.exe",
+          "-S",
+          "${WORKSPACE}\\tfbuild\\src\\tensorflow\\lite",
+          "-B",
+          "${WORKSPACE}\\tfbuild\\control",
+          "-G",
+          "Ninja",
+          "-DCMAKE_MAKE_PROGRAM=${WORKSPACE}/artifacts/tflite-research-20261009/build/ninja/ninja-1.11.1.3.data/scripts/ninja.exe",
+          "-DCMAKE_C_COMPILER=${WORKSPACE}/artifacts/tflite-research-20261009/build/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin/clang.exe",
+          "-DCMAKE_CXX_COMPILER=${WORKSPACE}/artifacts/tflite-research-20261009/build/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin/clang++.exe",
+          "-DCMAKE_C_COMPILER_TARGET=aarch64-linux-gnu",
+          "-DCMAKE_CXX_COMPILER_TARGET=aarch64-linux-gnu",
+          "-DCMAKE_SYSTEM_NAME=Linux",
+          "-DCMAKE_SYSTEM_PROCESSOR=aarch64",
+          "-DCMAKE_ASM_COMPILER=${WORKSPACE}/artifacts/tflite-research-20261009/build/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin/clang.exe",
+          "-DCMAKE_ASM_FLAGS=--target=aarch64-linux-gnu -march=armv8-a",
+          "-DCMAKE_SYSROOT=${WORKSPACE}/tfbuild/sysroot",
+          "-DCMAKE_C_FLAGS=-march=armv8-a -I${WORKSPACE}/tfbuild/sysroot/usr/include/python3.13 -I${WORKSPACE}/tfbuild/sysroot/usr/include/aarch64-linux-gnu/python3.13 -I${WORKSPACE}/artifacts/tflite-research-20261009/build/pybind11/pybind11/include -I${WORKSPACE}/tfbuild/sysroot/numpy/numpy/_core/include",
+          "-DCMAKE_CXX_FLAGS=-march=armv8-a -I${WORKSPACE}/tfbuild/sysroot/usr/include/python3.13 -I${WORKSPACE}/tfbuild/sysroot/usr/include/aarch64-linux-gnu/python3.13 -I${WORKSPACE}/artifacts/tflite-research-20261009/build/pybind11/pybind11/include -I${WORKSPACE}/tfbuild/sysroot/numpy/numpy/_core/include",
+          "-DCMAKE_EXE_LINKER_FLAGS=-fuse-ld=lld",
+          "-DCMAKE_SHARED_LINKER_FLAGS=-fuse-ld=lld",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DTFLITE_ENABLE_XNNPACK=ON",
+          "-DTFLITE_ENABLE_GPU=OFF",
+          "-DTFLITE_ENABLE_NNAPI=OFF",
+          "-DXNNPACK_ENABLE_ARM_I8MM=OFF",
+          "-DTFLITE_KERNEL_TEST=OFF",
+          "-DFETCHCONTENT_QUIET=OFF",
+          "-DGIT_EXECUTABLE=${WORKSPACE}/artifacts/tflite-research-20261009/build/git/cmd/git.exe"
+        ],
+        "so_bytes": 7329712,
+        "so_sha256": "5aef6b5dc2cc0d9d9cf2e74bd6bcb4f795e1d0cb315ea61b1829155ef4e0b354",
+        "status": "Build completed; target import/inference/quality and performance not yet verified. Not installed in production."
+      }
+    },
+    "spin10000": {
+      "binary_bytes": 7329712,
+      "sha256": "78a5ca4c08f41336d44ad0855ad6464686371ae52c6dc5440a38730ce1d242d4",
+      "manifest": {
+        "variant": "spin10000",
+        "control_so_sha256": "5aef6b5dc2cc0d9d9cf2e74bd6bcb4f795e1d0cb315ea61b1829155ef4e0b354",
+        "so_sha256": "78a5ca4c08f41336d44ad0855ad6464686371ae52c6dc5440a38730ce1d242d4",
+        "so_bytes": 7329712,
+        "change": "pthreadpool spin wait 1,000,000 -> 10,000; existing futex fallback and synchronization unchanged.",
+        "status": "Compiled only; target correctness, latency and CPU effect not yet measured."
+      }
+    },
+    "a53": {
+      "binary_bytes": 8281576,
+      "sha256": "8d281c8336220b8c891c077b9d27b1c35ac4314e25de55e2719507bb47fc3d19",
+      "manifest": {
+        "variant": "a53",
+        "tensorflow_commit": "3c92ac03cab816044f7b18a86eb86aa01a294d95",
+        "compiler": "clang version 23.1.3 (https://github.com/llvm/llvm-project.git 0d261d1ca552c95a8f007e061c787ac7132fbcbc)",
+        "configuration": [
+          "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\cmake\\cmake\\data\\bin\\cmake.exe",
+          "-S",
+          "${WORKSPACE}\\tfbuild\\src\\tensorflow\\lite",
+          "-B",
+          "${WORKSPACE}\\tfbuild\\a53",
+          "-G",
+          "Ninja",
+          "-DCMAKE_MAKE_PROGRAM=${WORKSPACE}/artifacts/tflite-research-20261009/build/ninja/ninja-1.11.1.3.data/scripts/ninja.exe",
+          "-DCMAKE_C_COMPILER=${WORKSPACE}/artifacts/tflite-research-20261009/build/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin/clang.exe",
+          "-DCMAKE_CXX_COMPILER=${WORKSPACE}/artifacts/tflite-research-20261009/build/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin/clang++.exe",
+          "-DCMAKE_C_COMPILER_TARGET=aarch64-linux-gnu",
+          "-DCMAKE_CXX_COMPILER_TARGET=aarch64-linux-gnu",
+          "-DCMAKE_SYSTEM_NAME=Linux",
+          "-DCMAKE_SYSTEM_PROCESSOR=aarch64",
+          "-DCMAKE_ASM_COMPILER=${WORKSPACE}/artifacts/tflite-research-20261009/build/toolchain/llvm-mingw-20261006-ucrt-x86_64/bin/clang.exe",
+          "-DCMAKE_ASM_FLAGS=--target=aarch64-linux-gnu -mcpu=cortex-a53",
+          "-DCMAKE_SYSROOT=${WORKSPACE}/tfbuild/sysroot",
+          "-DCMAKE_C_FLAGS=-mcpu=cortex-a53 -I${WORKSPACE}/tfbuild/sysroot/usr/include/python3.13 -I${WORKSPACE}/tfbuild/sysroot/usr/include/aarch64-linux-gnu/python3.13 -I${WORKSPACE}/artifacts/tflite-research-20261009/build/pybind11/pybind11/include -I${WORKSPACE}/tfbuild/sysroot/numpy/numpy/_core/include",
+          "-DCMAKE_CXX_FLAGS=-mcpu=cortex-a53 -I${WORKSPACE}/tfbuild/sysroot/usr/include/python3.13 -I${WORKSPACE}/tfbuild/sysroot/usr/include/aarch64-linux-gnu/python3.13 -I${WORKSPACE}/artifacts/tflite-research-20261009/build/pybind11/pybind11/include -I${WORKSPACE}/tfbuild/sysroot/numpy/numpy/_core/include",
+          "-DCMAKE_EXE_LINKER_FLAGS=-fuse-ld=lld",
+          "-DCMAKE_SHARED_LINKER_FLAGS=-fuse-ld=lld",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DTFLITE_ENABLE_XNNPACK=ON",
+          "-DTFLITE_ENABLE_GPU=OFF",
+          "-DTFLITE_ENABLE_NNAPI=OFF",
+          "-DXNNPACK_ENABLE_ARM_I8MM=OFF",
+          "-DTFLITE_KERNEL_TEST=OFF",
+          "-DFETCHCONTENT_QUIET=OFF",
+          "-DGIT_EXECUTABLE=${WORKSPACE}/artifacts/tflite-research-20261009/build/git/cmd/git.exe",
+          "-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON",
+          "-DFETCHCONTENT_SOURCE_DIR_ABSEIL-CPP=${WORKSPACE}/tfbuild/control/abseil-cpp",
+          "-DFETCHCONTENT_SOURCE_DIR_CPUINFO=${WORKSPACE}/tfbuild/control/cpuinfo",
+          "-DFETCHCONTENT_SOURCE_DIR_EIGEN=${WORKSPACE}/tfbuild/control/eigen",
+          "-DFETCHCONTENT_SOURCE_DIR_FARMHASH=${WORKSPACE}/tfbuild/control/farmhash",
+          "-DFETCHCONTENT_SOURCE_DIR_FFT2D=${WORKSPACE}/tfbuild/control/fft2d",
+          "-DFETCHCONTENT_SOURCE_DIR_FLATBUFFERS=${WORKSPACE}/tfbuild/control/flatbuffers",
+          "-DFETCHCONTENT_SOURCE_DIR_GEMMLOWP=${WORKSPACE}/tfbuild/control/gemmlowp",
+          "-DFETCHCONTENT_SOURCE_DIR_ML_DTYPES=${WORKSPACE}/tfbuild/control/ml_dtypes",
+          "-DFETCHCONTENT_SOURCE_DIR_PROTOBUF=${WORKSPACE}/tfbuild/control/protobuf",
+          "-DFETCHCONTENT_SOURCE_DIR_RUY=${WORKSPACE}/tfbuild/control/ruy",
+          "-DFETCHCONTENT_SOURCE_DIR_XNNPACK=${WORKSPACE}/tfbuild/control/xnnpack",
+          "-DFP16_SOURCE_DIR=${WORKSPACE}/tfbuild/control/FP16-source",
+          "-DFXDIV_SOURCE_DIR=${WORKSPACE}/tfbuild/control/FXdiv-source",
+          "-DPSIMD_SOURCE_DIR=${WORKSPACE}/tfbuild/control/psimd-source",
+          "-DPTHREADPOOL_SOURCE_DIR=${WORKSPACE}/tfbuild/control/pthreadpool-source",
+          "-DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+        ],
+        "so_bytes": 8281576,
+        "so_sha256": "8d281c8336220b8c891c077b9d27b1c35ac4314e25de55e2719507bb47fc3d19",
+        "status": "Build completed; target import/inference/quality and performance not yet verified. Not installed in production."
+      }
+    },
+    "mmap-cache": {
+      "binary_bytes": 7329808,
+      "sha256": "1349cb9d88afe9c3aa35d881500b12d8d92b2eacdf171c670b919c750948ff4c",
+      "manifest": {
+        "variant": "mmap-cache",
+        "control_so_sha256": "5aef6b5dc2cc0d9d9cf2e74bd6bcb4f795e1d0cb315ea61b1829155ef4e0b354",
+        "so_sha256": "1349cb9d88afe9c3aa35d881500b12d8d92b2eacdf171c670b919c750948ff4c",
+        "so_bytes": 7329808,
+        "change": "Opt-in existing upstream XNNPACK experimental mmap weight cache; original FP16/model arithmetic unchanged. Cache must be unique per model/runtime.",
+        "status": "Compiled only; ARM correctness and speed/memory unverified; not installed in production."
+      },
+      "source-before.cc_sha256": "cd2defee884b863739d6b614f2e3e366a7bab3b28b1dfa98970c17d92e342ad5",
+      "source-after.cc_sha256": "36b78390fd045b61d558c4345bd5ac680338f6de81db61d687194392e10663ff"
+    },
+    "capacity-diagnostic": {
+      "binary_bytes": 7329776,
+      "sha256": "77b531b6d03cd973af00239c446402b07ecf63de1019a8780ea2a540a4fd10f4",
+      "manifest": {
+        "variant": "capacity-diagnostic",
+        "control_so_sha256": "5aef6b5dc2cc0d9d9cf2e74bd6bcb4f795e1d0cb315ea61b1829155ef4e0b354",
+        "so_sha256": "77b531b6d03cd973af00239c446402b07ecf63de1019a8780ea2a540a4fd10f4",
+        "so_bytes": 7329776,
+        "change": "One startup capacity diagnostic",
+        "status": "Compiled only; ARM correctness and memory/performance unverified; original FP16 model preserved."
+      },
+      "source-before.cc_sha256": "9d4cd4eef0eae192d3495bf0058267b726532d91d833fbaa2c92e92197ecf105",
+      "source-after.cc_sha256": "9bb7c645deac40090b82add7b16056592b64c7e178aab4dcc347b8de056f0a37"
+    },
+    "reserve": {
+      "binary_bytes": 7331376,
+      "sha256": "3f62ef36a602429d03a38e718c3d0c71fd0eeae49a3d67062be7ccc4f1feb1d4",
+      "manifest": {
+        "variant": "reserve",
+        "control_so_sha256": "5aef6b5dc2cc0d9d9cf2e74bd6bcb4f795e1d0cb315ea61b1829155ef4e0b354",
+        "so_sha256": "3f62ef36a602429d03a38e718c3d0c71fd0eeae49a3d67062be7ccc4f1feb1d4",
+        "so_bytes": 7331376,
+        "change": "Reserve aligned total unpacked bytes once before conversion and before XNNPACK runtime construction; no arithmetic changes.",
+        "status": "Compiled only; ARM correctness and memory/performance unverified; original FP16 model preserved."
+      },
+      "source-before.cc_sha256": "9d4cd4eef0eae192d3495bf0058267b726532d91d833fbaa2c92e92197ecf105",
+      "source-after.cc_sha256": "71d068798c673df0aa81b3dd18f97cdc5d569b68d373cc9b8cec7077fc1c65c6"
+    }
+  },
+  "limit": "Original vendor native compile flags unknown. This records reproducible upstream builds, not identical reconstruction of the community wheel."
+}

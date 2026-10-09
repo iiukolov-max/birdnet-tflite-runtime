@@ -1,0 +1,150 @@
+{
+  "packages": [
+    {
+      "Package": "libc6",
+      "Version": "2.41-12+rpt1+deb13u4",
+      "Architecture": "arm64",
+      "Filename": "pool/main/g/glibc/libc6_2.41-12+rpt1+deb13u4_arm64.deb",
+      "SHA256": "5c5376fdd2d6a4c9927eb0d6fcfea232f64b8ab44103e65bb61f621e99d792e1",
+      "Size": "5178372",
+      "url": "http://archive.raspberrypi.com/debian/pool/main/g/glibc/libc6_2.41-12+rpt1+deb13u4_arm64.deb",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\libc6_2.41-12+rpt1+deb13u4_arm64.deb",
+      "bytes": 5178372,
+      "sha256": "5c5376fdd2d6a4c9927eb0d6fcfea232f64b8ab44103e65bb61f621e99d792e1"
+    },
+    {
+      "Package": "libc6-dev",
+      "Version": "2.41-12+rpt1+deb13u4",
+      "Architecture": "arm64",
+      "Filename": "pool/main/g/glibc/libc6-dev_2.41-12+rpt1+deb13u4_arm64.deb",
+      "SHA256": "fc6f740c366136d57b18376025635c79591baa1811cfc5b5b66e9afd99c09633",
+      "Size": "2356568",
+      "url": "http://archive.raspberrypi.com/debian/pool/main/g/glibc/libc6-dev_2.41-12+rpt1+deb13u4_arm64.deb",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\libc6-dev_2.41-12+rpt1+deb13u4_arm64.deb",
+      "bytes": 2356568,
+      "sha256": "fc6f740c366136d57b18376025635c79591baa1811cfc5b5b66e9afd99c09633"
+    },
+    {
+      "Package": "linux-libc-dev",
+      "Version": "1:6.18.50-1+rpt1",
+      "Architecture": "all",
+      "Filename": "pool/main/l/linux/linux-libc-dev_6.18.50-1+rpt1_all.deb",
+      "SHA256": "85c6187d8eb14f7289dbb3e6d6ceee321d621d9394dfd623c40e21cf4b9f3e80",
+      "Size": "2410412",
+      "url": "http://archive.raspberrypi.com/debian/pool/main/l/linux/linux-libc-dev_6.18.50-1+rpt1_all.deb",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\linux-libc-dev_6.18.50-1+rpt1_all.deb",
+      "bytes": 2410412,
+      "sha256": "85c6187d8eb14f7289dbb3e6d6ceee321d621d9394dfd623c40e21cf4b9f3e80"
+    },
+    {
+      "Package": "libgcc-14-dev",
+      "Version": "14.2.0-19",
+      "Architecture": "arm64",
+      "Filename": "pool/main/g/gcc-14/libgcc-14-dev_14.2.0-19_arm64.deb",
+      "SHA256": "64b8ebc7182a69aa9525df6eab5e7eb849b947e350d821549f8a8a3e9b19e5ba",
+      "Size": "2358568",
+      "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libgcc-14-dev_14.2.0-19_arm64.deb",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\libgcc-14-dev_14.2.0-19_arm64.deb",
+      "bytes": 2358568,
+      "sha256": "64b8ebc7182a69aa9525df6eab5e7eb849b947e350d821549f8a8a3e9b19e5ba"
+    },
+    {
+      "Package": "libgcc-s1",
+      "Version": "14.2.0-19",
+      "Architecture": "arm64",
+      "Filename": "pool/main/g/gcc-14/libgcc-s1_14.2.0-19_arm64.deb",
+      "SHA256": "1108bc87879833d6d9a145f22a4a15cddb34e065b4b5f4b97bee586adbac2851",
+      "Size": "54104",
+      "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libgcc-s1_14.2.0-19_arm64.deb",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\libgcc-s1_14.2.0-19_arm64.deb",
+      "bytes": 54104,
+      "sha256": "1108bc87879833d6d9a145f22a4a15cddb34e065b4b5f4b97bee586adbac2851"
+    },
+    {
+      "Package": "libstdc++6",
+      "Version": "14.2.0-19",
+      "Architecture": "arm64",
+      "Filename": "pool/main/g/gcc-14/libstdc++6_14.2.0-19_arm64.deb",
+      "SHA256": "6669b0c52a2e7c6af9adfdabce3ff6e286065cdfbc7b85280862b5f799daebee",
+      "Size": "637536",
+      "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libstdc++6_14.2.0-19_arm64.deb",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\libstdc++6_14.2.0-19_arm64.deb",
+      "bytes": 637536,
+      "sha256": "6669b0c52a2e7c6af9adfdabce3ff6e286065cdfbc7b85280862b5f799daebee"
+    },
+    {
+      "Package": "libstdc++-14-dev",
+      "Version": "14.2.0-19",
+      "Architecture": "arm64",
+      "Filename": "pool/main/g/gcc-14/libstdc++-14-dev_14.2.0-19_arm64.deb",
+      "SHA256": "8760122d044cd8eb8c69426311d6b5ce7bb8f0f76e9cda1944d153ae878138f8",
+      "Size": "2294728",
+      "url": "https://deb.debian.org/debian/pool/main/g/gcc-14/libstdc++-14-dev_14.2.0-19_arm64.deb",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\libstdc++-14-dev_14.2.0-19_arm64.deb",
+      "bytes": 2294728,
+      "sha256": "8760122d044cd8eb8c69426311d6b5ce7bb8f0f76e9cda1944d153ae878138f8"
+    },
+    {
+      "Package": "libpython3.13-dev",
+      "Version": "3.13.5-2+deb13u5",
+      "Architecture": "arm64",
+      "Filename": "pool/main/p/python3.13/libpython3.13-dev_3.13.5-2+deb13u5_arm64.deb",
+      "SHA256": "cd8e73644d319576d8cf02ab63ccd6b1fb8eb12637b5f59114b520a9b3d4741e",
+      "Size": "4932808",
+      "url": "https://deb.debian.org/debian/pool/main/p/python3.13/libpython3.13-dev_3.13.5-2+deb13u5_arm64.deb",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\libpython3.13-dev_3.13.5-2+deb13u5_arm64.deb",
+      "bytes": 4932808,
+      "sha256": "cd8e73644d319576d8cf02ab63ccd6b1fb8eb12637b5f59114b520a9b3d4741e"
+    },
+    {
+      "url": "https://files.pythonhosted.org/packages/23/83/377f84aaeb800b64c0ef4de58b08769e782edcefa4fea712910b6f0afd3c/numpy-2.3.3-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+      "file": "${WORKSPACE}\\artifacts\\tflite-research-20261009\\build\\packages\\numpy-2.3.3-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+      "bytes": 14278881,
+      "sha256": "952cfd0748514ea7c3afc729a0fc639e61655ce4c55ab9acfab14bda4f402b4c"
+    }
+  ],
+  "unresolved_links": [
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\gcc\\aarch64-linux-gnu\\14\\libasan.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libasan.so.8"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\gcc\\aarch64-linux-gnu\\14\\libatomic.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libatomic.so.1"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\gcc\\aarch64-linux-gnu\\14\\libgomp.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libgomp.so.1"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\gcc\\aarch64-linux-gnu\\14\\libhwasan.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libhwasan.so.0"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\gcc\\aarch64-linux-gnu\\14\\libitm.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libitm.so.1"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\gcc\\aarch64-linux-gnu\\14\\liblsan.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\liblsan.so.0"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\gcc\\aarch64-linux-gnu\\14\\libtsan.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libtsan.so.2"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\gcc\\aarch64-linux-gnu\\14\\libubsan.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libubsan.so.1"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libpython3.13.so",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\lib\\aarch64-linux-gnu\\libpython3.13.so.1"
+    ],
+    [
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\share\\doc\\libpython3.13-dev",
+      "${WORKSPACE}\\tfbuild\\sysroot\\usr\\share\\doc\\libpython3.13-stdlib"
+    ]
+  ],
+  "numpy_header_version": "2.3.3",
+  "scope": "Build-only sysroot; no Debian maintainer scripts executed or packages installed on Pi."
+}

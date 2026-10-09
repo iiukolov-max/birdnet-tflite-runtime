@@ -1,0 +1,66 @@
+[
+  {
+    "Package": "libc6",
+    "Version": "2.41-12+rpt1+deb13u4",
+    "Architecture": "arm64",
+    "Filename": "pool/main/g/glibc/libc6_2.41-12+rpt1+deb13u4_arm64.deb",
+    "SHA256": "5c5376fdd2d6a4c9927eb0d6fcfea232f64b8ab44103e65bb61f621e99d792e1",
+    "Size": "5178372"
+  },
+  {
+    "Package": "libc6-dev",
+    "Version": "2.41-12+rpt1+deb13u4",
+    "Architecture": "arm64",
+    "Filename": "pool/main/g/glibc/libc6-dev_2.41-12+rpt1+deb13u4_arm64.deb",
+    "SHA256": "fc6f740c366136d57b18376025635c79591baa1811cfc5b5b66e9afd99c09633",
+    "Size": "2356568"
+  },
+  {
+    "Package": "linux-libc-dev",
+    "Version": "1:6.18.50-1+rpt1",
+    "Architecture": "all",
+    "Filename": "pool/main/l/linux/linux-libc-dev_6.18.50-1+rpt1_all.deb",
+    "SHA256": "85c6187d8eb14f7289dbb3e6d6ceee321d621d9394dfd623c40e21cf4b9f3e80",
+    "Size": "2410412"
+  },
+  {
+    "Package": "libgcc-14-dev",
+    "Version": "14.2.0-19",
+    "Architecture": "arm64",
+    "Filename": "pool/main/g/gcc-14/libgcc-14-dev_14.2.0-19_arm64.deb",
+    "SHA256": "64b8ebc7182a69aa9525df6eab5e7eb849b947e350d821549f8a8a3e9b19e5ba",
+    "Size": "2358568"
+  },
+  {
+    "Package": "libgcc-s1",
+    "Version": "14.2.0-19",
+    "Architecture": "arm64",
+    "Filename": "pool/main/g/gcc-14/libgcc-s1_14.2.0-19_arm64.deb",
+    "SHA256": "1108bc87879833d6d9a145f22a4a15cddb34e065b4b5f4b97bee586adbac2851",
+    "Size": "54104"
+  },
+  {
+    "Package": "libstdc++6",
+    "Version": "14.2.0-19",
+    "Architecture": "arm64",
+    "Filename": "pool/main/g/gcc-14/libstdc++6_14.2.0-19_arm64.deb",
+    "SHA256": "6669b0c52a2e7c6af9adfdabce3ff6e286065cdfbc7b85280862b5f799daebee",
+    "Size": "637536"
+  },
+  {
+    "Package": "libstdc++-14-dev",
+    "Version": "14.2.0-19",
+    "Architecture": "arm64",
+    "Filename": "pool/main/g/gcc-14/libstdc++-14-dev_14.2.0-19_arm64.deb",
+    "SHA256": "8760122d044cd8eb8c69426311d6b5ce7bb8f0f76e9cda1944d153ae878138f8",
+    "Size": "2294728"
+  },
+  {
+    "Package": "libpython3.13-dev",
+    "Version": "3.13.5-2+deb13u5",
+    "Architecture": "arm64",
+    "Filename": "pool/main/p/python3.13/libpython3.13-dev_3.13.5-2+deb13u5_arm64.deb",
+    "SHA256": "cd8e73644d319576d8cf02ab63ccd6b1fb8eb12637b5f59114b520a9b3d4741e",
+    "Size": "4932808"
+  }
+]
