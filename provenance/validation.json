@@ -1,9 +1,10 @@
 {
-  "runtime_sha256": "1349cb9d88afe9c3aa35d881500b12d8d92b2eacdf171c670b919c750948ff4c",
-  "version": "2.17.1.post1",
-  "target": "Raspberry Pi Zero2W; Debian/Raspberry Pi OS Trixie ARM64; CPython3.13; NumPy2.3.3",
-  "quality": "Bit-exact all11560class outputs and detections in paired34file pipeline comparison; production smoke and disable/enable fallback tested",
-  "effects": "Much lower swap, moderate speed/CPU benefit; PSS not reduced; electrical energy not measured",
-  "runtime_change": "Expose existing XNNPACK mmap-cache option; no GEMM/FFT/spin/no-prefetch prototype patches",
-  "first_binary_build_status": "Original build manifests intentionally retain historical compiled-only status"
+  "version": "2.17.1.post2",
+  "runtime_sha256": "150a5758b8ffdecef42d5030d91954770dd8aa717783ed857cb5ba8566278dcb",
+  "target": "Zero2W Trixie ARM64 CPython3.13 NumPy2",
+  "V2_V3": "All outputs bit-exact on tested synthetic inputs, including three locations and55 weeks for geomodels",
+  "V1": "Two samples: logits max delta3.8147e-6, sigmoid delta1.0710e-8, same top5; user accepted legacy rounding",
+  "speed": "8warm synthetic windows each, existing caches,2threads600MHz:2.017914s candidate vs2.016079s working",
+  "limits": "No electrical measurement, no claim of complete real-recording accuracy validation",
+  "deployment": "Installed on test Pi: canonical V2/V3/geomodel checks passed, original native library removed, one native mapping in app V2/V3/fallback/V1; microphone deliberately disconnected."
 }

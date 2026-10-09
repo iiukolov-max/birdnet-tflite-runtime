@@ -3,9 +3,9 @@ import argparse,base64,csv,hashlib,io,zipfile
 from pathlib import Path
 REPO=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser()
-parser.add_argument('--runtime',type=Path,default=REPO/'tfbuild/mmap-cache/runtime/tflite_runtime')
-parser.add_argument('--version',default='2.17.1.post1')
-parser.add_argument('--expected-so-sha',default='1349cb9d88afe9c3aa35d881500b12d8d92b2eacdf171c670b919c750948ff4c')
+parser.add_argument('--runtime',type=Path,default=REPO/'tfbuild/single-runtime/runtime/birdnet_tflite_cached')
+parser.add_argument('--version',default='2.17.1.post2')
+parser.add_argument('--expected-so-sha',default='150a5758b8ffdecef42d5030d91954770dd8aa717783ed857cb5ba8566278dcb')
 args=parser.parse_args()
 assert hashlib.sha256((args.runtime/'_pywrap_tensorflow_interpreter_wrapper.so').read_bytes()).hexdigest()==args.expected_so_sha
 files={}
