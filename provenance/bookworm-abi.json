@@ -1,0 +1,8 @@
+{
+  "native_sha256": "3c14dd01908f8db7c043e5d8f94d7357c53d2b3f107f1617d4b2653338aef58f",
+  "maximum_glibc": "2.34",
+  "maximum_glibcxx": "3.4.30",
+  "target_glibc": "2.36",
+  "architecture": "aarch64",
+  "python": "3.11"
+}

@@ -1,0 +1,757 @@
+{
+  "passed": true,
+  "numerical": {
+    "status": "passed",
+    "bookworm": {
+      "python": "3.11",
+      "glibc": "2.36",
+      "mode": "isolated userspace on Raspberry Pi Zero 2 W; host OS Trixie"
+    },
+    "reference_runtime_sha256": "150a5758b8ffdecef42d5030d91954770dd8aa717783ed857cb5ba8566278dcb",
+    "v3_reference": "Existing qualified Trixie FP32/cache profile; its original FP16 equivalence was independently checked during installation",
+    "models": [
+      {
+        "model": "BirdNET_V3_full_FP32_weight_storage.tflite",
+        "original_model": "BirdNET+_V3.0-preview3.1_Global_11K_FP16_pruned.tflite",
+        "input_sha256": "be1758f583f81f02167de8ae7424cd5fdcc3f5231934dafe21659ee578c1838c",
+        "numpy": {
+          "2.3.3": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 25680,
+            "tensors": [
+              {
+                "tensor": "1424",
+                "shape": [
+                  2,
+                  1,
+                  11560
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              },
+              {
+                "tensor": "1417",
+                "shape": [
+                  2,
+                  1,
+                  1280
+                ],
+                "role": "V3 auxiliary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-05,
+                "within_tolerance": true
+              }
+            ]
+          },
+          "1.26.4": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 25680,
+            "tensors": [
+              {
+                "tensor": "1424",
+                "shape": [
+                  2,
+                  1,
+                  11560
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              },
+              {
+                "tensor": "1417",
+                "shape": [
+                  2,
+                  1,
+                  1280
+                ],
+                "role": "V3 auxiliary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-05,
+                "within_tolerance": true
+              }
+            ]
+          }
+        },
+        "numpy1_vs_numpy2": {
+          "bit_exact": true,
+          "within_cross_os_tolerance": true,
+          "max_abs": 0.0,
+          "top5_equal": true,
+          "values": 25680,
+          "tensors": [
+            {
+              "tensor": "1424",
+              "shape": [
+                2,
+                1,
+                11560
+              ],
+              "role": "primary",
+              "max_abs": 0.0,
+              "rtol": 1e-05,
+              "atol": 1e-06,
+              "within_tolerance": true
+            },
+            {
+              "tensor": "1417",
+              "shape": [
+                2,
+                1,
+                1280
+              ],
+              "role": "V3 auxiliary",
+              "max_abs": 0.0,
+              "rtol": 1e-05,
+              "atol": 1e-05,
+              "within_tolerance": true
+            }
+          ]
+        }
+      },
+      {
+        "model": "BirdNET_GLOBAL_6K_V2.4_Model_FP16.tflite",
+        "original_model": "BirdNET_GLOBAL_6K_V2.4_Model_FP16.tflite",
+        "input_sha256": "f99612e8c95068f802c931f95dc75a34101ebe58996afe0435ea9d9f3e420aa8",
+        "numpy": {
+          "2.3.3": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 13044,
+            "tensors": [
+              {
+                "tensor": "546",
+                "shape": [
+                  2,
+                  1,
+                  6522
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          },
+          "1.26.4": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 13044,
+            "tensors": [
+              {
+                "tensor": "546",
+                "shape": [
+                  2,
+                  1,
+                  6522
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          }
+        },
+        "numpy1_vs_numpy2": {
+          "bit_exact": true,
+          "within_cross_os_tolerance": true,
+          "max_abs": 0.0,
+          "top5_equal": true,
+          "values": 13044,
+          "tensors": [
+            {
+              "tensor": "546",
+              "shape": [
+                2,
+                1,
+                6522
+              ],
+              "role": "primary",
+              "max_abs": 0.0,
+              "rtol": 1e-05,
+              "atol": 1e-06,
+              "within_tolerance": true
+            }
+          ]
+        }
+      },
+      {
+        "model": "BirdNET_GLOBAL_6K_V2.4_MData_Model_FP16.tflite",
+        "original_model": "BirdNET_GLOBAL_6K_V2.4_MData_Model_FP16.tflite",
+        "input_sha256": "864d2a9b0ffb335bf8703339bc3acea9f369a9dc3948ae9f14d1dc03fe0725ea",
+        "numpy": {
+          "2.3.3": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 1076130,
+            "tensors": [
+              {
+                "tensor": "70",
+                "shape": [
+                  165,
+                  1,
+                  6522
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          },
+          "1.26.4": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 1076130,
+            "tensors": [
+              {
+                "tensor": "70",
+                "shape": [
+                  165,
+                  1,
+                  6522
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          }
+        },
+        "numpy1_vs_numpy2": {
+          "bit_exact": true,
+          "within_cross_os_tolerance": true,
+          "max_abs": 0.0,
+          "top5_equal": true,
+          "values": 1076130,
+          "tensors": [
+            {
+              "tensor": "70",
+              "shape": [
+                165,
+                1,
+                6522
+              ],
+              "role": "primary",
+              "max_abs": 0.0,
+              "rtol": 1e-05,
+              "atol": 1e-06,
+              "within_tolerance": true
+            }
+          ]
+        }
+      },
+      {
+        "model": "BirdNET_GLOBAL_6K_V2.4_MData_Model_V2_FP16.tflite",
+        "original_model": "BirdNET_GLOBAL_6K_V2.4_MData_Model_V2_FP16.tflite",
+        "input_sha256": "864d2a9b0ffb335bf8703339bc3acea9f369a9dc3948ae9f14d1dc03fe0725ea",
+        "numpy": {
+          "2.3.3": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 1076130,
+            "tensors": [
+              {
+                "tensor": "81",
+                "shape": [
+                  165,
+                  1,
+                  6522
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          },
+          "1.26.4": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 1076130,
+            "tensors": [
+              {
+                "tensor": "81",
+                "shape": [
+                  165,
+                  1,
+                  6522
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          }
+        },
+        "numpy1_vs_numpy2": {
+          "bit_exact": true,
+          "within_cross_os_tolerance": true,
+          "max_abs": 0.0,
+          "top5_equal": true,
+          "values": 1076130,
+          "tensors": [
+            {
+              "tensor": "81",
+              "shape": [
+                165,
+                1,
+                6522
+              ],
+              "role": "primary",
+              "max_abs": 0.0,
+              "rtol": 1e-05,
+              "atol": 1e-06,
+              "within_tolerance": true
+            }
+          ]
+        }
+      },
+      {
+        "model": "BirdNET+_Geomodel_V3.0.4_Global_14K_FP32.tflite",
+        "original_model": "BirdNET+_Geomodel_V3.0.4_Global_14K_FP32.tflite",
+        "input_sha256": "864d2a9b0ffb335bf8703339bc3acea9f369a9dc3948ae9f14d1dc03fe0725ea",
+        "numpy": {
+          "2.3.3": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 2323530,
+            "tensors": [
+              {
+                "tensor": "515",
+                "shape": [
+                  165,
+                  1,
+                  14082
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          },
+          "1.26.4": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 2323530,
+            "tensors": [
+              {
+                "tensor": "515",
+                "shape": [
+                  165,
+                  1,
+                  14082
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          }
+        },
+        "numpy1_vs_numpy2": {
+          "bit_exact": true,
+          "within_cross_os_tolerance": true,
+          "max_abs": 0.0,
+          "top5_equal": true,
+          "values": 2323530,
+          "tensors": [
+            {
+              "tensor": "515",
+              "shape": [
+                165,
+                1,
+                14082
+              ],
+              "role": "primary",
+              "max_abs": 0.0,
+              "rtol": 1e-05,
+              "atol": 1e-06,
+              "within_tolerance": true
+            }
+          ]
+        }
+      },
+      {
+        "model": "BirdNET_6K_GLOBAL_MODEL.tflite",
+        "original_model": "BirdNET_6K_GLOBAL_MODEL.tflite",
+        "input_sha256": "d971a9af78a2e78ceeafa0b7acdf224f65d05c4a4d93b11e9c512984014663d8",
+        "numpy": {
+          "2.3.3": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 12724,
+            "tensors": [
+              {
+                "tensor": "333",
+                "shape": [
+                  2,
+                  1,
+                  6362
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          },
+          "1.26.4": {
+            "bit_exact": true,
+            "within_cross_os_tolerance": true,
+            "max_abs": 0.0,
+            "top5_equal": true,
+            "values": 12724,
+            "tensors": [
+              {
+                "tensor": "333",
+                "shape": [
+                  2,
+                  1,
+                  6362
+                ],
+                "role": "primary",
+                "max_abs": 0.0,
+                "rtol": 1e-05,
+                "atol": 1e-06,
+                "within_tolerance": true
+              }
+            ]
+          }
+        },
+        "numpy1_vs_numpy2": {
+          "bit_exact": true,
+          "within_cross_os_tolerance": true,
+          "max_abs": 0.0,
+          "top5_equal": true,
+          "values": 12724,
+          "tensors": [
+            {
+              "tensor": "333",
+              "shape": [
+                2,
+                1,
+                6362
+              ],
+              "role": "primary",
+              "max_abs": 0.0,
+              "rtol": 1e-05,
+              "atol": 1e-06,
+              "within_tolerance": true
+            }
+          ]
+        }
+      }
+    ],
+    "cache": [
+      {
+        "numpy": "2.3.3",
+        "mode": "cold",
+        "cache_bytes": 138819680,
+        "delegate_verified": true,
+        "bit_exact": true,
+        "within_cross_os_tolerance": true,
+        "max_abs": 0.0,
+        "top5_equal": true,
+        "values": 51360,
+        "tensors": [
+          {
+            "tensor": "1424",
+            "shape": [
+              4,
+              1,
+              11560
+            ],
+            "role": "primary",
+            "max_abs": 0.0,
+            "rtol": 1e-05,
+            "atol": 1e-06,
+            "within_tolerance": true
+          },
+          {
+            "tensor": "1417",
+            "shape": [
+              4,
+              1,
+              1280
+            ],
+            "role": "V3 auxiliary",
+            "max_abs": 0.0,
+            "rtol": 1e-05,
+            "atol": 1e-05,
+            "within_tolerance": true
+          }
+        ]
+      },
+      {
+        "numpy": "2.3.3",
+        "mode": "reload",
+        "cache_bytes": 138819680,
+        "delegate_verified": true,
+        "bit_exact": true,
+        "within_cross_os_tolerance": true,
+        "max_abs": 0.0,
+        "top5_equal": true,
+        "values": 51360,
+        "tensors": [
+          {
+            "tensor": "1424",
+            "shape": [
+              4,
+              1,
+              11560
+            ],
+            "role": "primary",
+            "max_abs": 0.0,
+            "rtol": 1e-05,
+            "atol": 1e-06,
+            "within_tolerance": true
+          },
+          {
+            "tensor": "1417",
+            "shape": [
+              4,
+              1,
+              1280
+            ],
+            "role": "V3 auxiliary",
+            "max_abs": 0.0,
+            "rtol": 1e-05,
+            "atol": 1e-05,
+            "within_tolerance": true
+          }
+        ]
+      },
+      {
+        "numpy": "1.26.4",
+        "mode": "cold",
+        "cache_bytes": 138819680,
+        "delegate_verified": true,
+        "bit_exact": true,
+        "within_cross_os_tolerance": true,
+        "max_abs": 0.0,
+        "top5_equal": true,
+        "values": 51360,
+        "tensors": [
+          {
+            "tensor": "1424",
+            "shape": [
+              4,
+              1,
+              11560
+            ],
+            "role": "primary",
+            "max_abs": 0.0,
+            "rtol": 1e-05,
+            "atol": 1e-06,
+            "within_tolerance": true
+          },
+          {
+            "tensor": "1417",
+            "shape": [
+              4,
+              1,
+              1280
+            ],
+            "role": "V3 auxiliary",
+            "max_abs": 0.0,
+            "rtol": 1e-05,
+            "atol": 1e-05,
+            "within_tolerance": true
+          }
+        ]
+      },
+      {
+        "numpy": "1.26.4",
+        "mode": "reload",
+        "cache_bytes": 138819680,
+        "delegate_verified": true,
+        "bit_exact": true,
+        "within_cross_os_tolerance": true,
+        "max_abs": 0.0,
+        "top5_equal": true,
+        "values": 51360,
+        "tensors": [
+          {
+            "tensor": "1424",
+            "shape": [
+              4,
+              1,
+              11560
+            ],
+            "role": "primary",
+            "max_abs": 0.0,
+            "rtol": 1e-05,
+            "atol": 1e-06,
+            "within_tolerance": true
+          },
+          {
+            "tensor": "1417",
+            "shape": [
+              4,
+              1,
+              1280
+            ],
+            "role": "V3 auxiliary",
+            "max_abs": 0.0,
+            "rtol": 1e-05,
+            "atol": 1e-05,
+            "within_tolerance": true
+          }
+        ]
+      }
+    ],
+    "host_profile_sha256_before": "ea011931d8a315bee6d743d34f3898866647ac03cb74b42ecdca99fa3e1c3963",
+    "cross_os_contract": {
+      "rtol": 1e-05,
+      "primary_atol": 1e-06,
+      "v3_auxiliary_1280_atol": 1e-05,
+      "legacy_v1_absolute_bound": 0.0001,
+      "acoustic_top5_must_match": true,
+      "note": "Cross-OS rounding is measured per output, not described as bit-exact. Same-Bookworm NumPy/cache comparisons must be bit-exact."
+    },
+    "bookworm_original_vs_trixie": {
+      "bit_exact": true,
+      "within_cross_os_tolerance": true,
+      "max_abs": 0.0,
+      "top5_equal": true,
+      "values": 51360,
+      "tensors": [
+        {
+          "tensor": "1424",
+          "shape": [
+            4,
+            1,
+            11560
+          ],
+          "role": "primary",
+          "max_abs": 0.0,
+          "rtol": 1e-05,
+          "atol": 1e-06,
+          "within_tolerance": true
+        },
+        {
+          "tensor": "1417",
+          "shape": [
+            4,
+            1,
+            1280
+          ],
+          "role": "V3 auxiliary",
+          "max_abs": 0.0,
+          "rtol": 1e-05,
+          "atol": 1e-05,
+          "within_tolerance": true
+        }
+      ]
+    },
+    "host_profile_sha256_after": "ea011931d8a315bee6d743d34f3898866647ac03cb74b42ecdca99fa3e1c3963",
+    "host_profile_unchanged": true
+  },
+  "integration": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "numpy2-selection-and-import",
+        "exit": 0,
+        "stdout": "SELECTED bookworm-arm64-cp311\nBRIDGE 2.17.1.post3 /runtime/birdnet_tflite_cached/interpreter.py\n",
+        "stderr": ""
+      },
+      {
+        "check": "numpy2-installer-tests",
+        "exit": 0,
+        "stdout": "{\"event\": \"v3_runtime_skipped\", \"reason\": \"No qualified package for this device/OS/Python/NumPy; original runtime retained\"}\n{\"event\": \"v3_runtime_skipped\", \"reason\": \"No qualified package for this device/OS/Python/NumPy; original runtime retained\"}\n",
+        "stderr": "test_ambiguous_and_empty_matrix_rejected (__main__.RuntimeInstallerTests.test_ambiguous_and_empty_matrix_rejected) ... ok\ntest_corrupt_artifact_is_rejected (__main__.RuntimeInstallerTests.test_corrupt_artifact_is_rejected) ... ok\ntest_invalid_manifest_does_not_touch_profile (__main__.RuntimeInstallerTests.test_invalid_manifest_does_not_touch_profile) ... ok\ntest_legacy_v1_small_rounding_allowed_but_rank_change_rejected (__main__.RuntimeInstallerTests.test_legacy_v1_small_rounding_allowed_but_rank_change_rejected) ... ok\ntest_matrix_selects_correct_os_and_python (__main__.RuntimeInstallerTests.test_matrix_selects_correct_os_and_python) ... ok\ntest_path_traversal_rejected_before_copy (__main__.RuntimeInstallerTests.test_path_traversal_rejected_before_copy) ... ok\ntest_unsupported_matrix_does_not_touch_profile (__main__.RuntimeInstallerTests.test_unsupported_matrix_does_not_touch_profile) ... ok\ntest_unsupported_target_does_not_touch_profile (__main__.RuntimeInstallerTests.test_unsupported_target_does_not_touch_profile) ... ok\ntest_v2_v3_rounding_is_rejected (__main__.RuntimeInstallerTests.test_v2_v3_rounding_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.677s\n\nOK\n"
+      },
+      {
+        "check": "numpy1-selection-and-import",
+        "exit": 0,
+        "stdout": "SELECTED bookworm-arm64-cp311\nBRIDGE 2.17.1.post3 /runtime/birdnet_tflite_cached/interpreter.py\n",
+        "stderr": ""
+      },
+      {
+        "check": "numpy1-installer-tests",
+        "exit": 0,
+        "stdout": "{\"event\": \"v3_runtime_skipped\", \"reason\": \"No qualified package for this device/OS/Python/NumPy; original runtime retained\"}\n{\"event\": \"v3_runtime_skipped\", \"reason\": \"No qualified package for this device/OS/Python/NumPy; original runtime retained\"}\n",
+        "stderr": "test_ambiguous_and_empty_matrix_rejected (__main__.RuntimeInstallerTests.test_ambiguous_and_empty_matrix_rejected) ... ok\ntest_corrupt_artifact_is_rejected (__main__.RuntimeInstallerTests.test_corrupt_artifact_is_rejected) ... ok\ntest_invalid_manifest_does_not_touch_profile (__main__.RuntimeInstallerTests.test_invalid_manifest_does_not_touch_profile) ... ok\ntest_legacy_v1_small_rounding_allowed_but_rank_change_rejected (__main__.RuntimeInstallerTests.test_legacy_v1_small_rounding_allowed_but_rank_change_rejected) ... ok\ntest_matrix_selects_correct_os_and_python (__main__.RuntimeInstallerTests.test_matrix_selects_correct_os_and_python) ... ok\ntest_path_traversal_rejected_before_copy (__main__.RuntimeInstallerTests.test_path_traversal_rejected_before_copy) ... ok\ntest_unsupported_matrix_does_not_touch_profile (__main__.RuntimeInstallerTests.test_unsupported_matrix_does_not_touch_profile) ... ok\ntest_unsupported_target_does_not_touch_profile (__main__.RuntimeInstallerTests.test_unsupported_target_does_not_touch_profile) ... ok\ntest_v2_v3_rounding_is_rejected (__main__.RuntimeInstallerTests.test_v2_v3_rounding_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.775s\n\nOK\n"
+      },
+      {
+        "check": "trixie-selection",
+        "exit": 0,
+        "stdout": "SELECTED trixie-arm64-cp313\n",
+        "stderr": ""
+      },
+      {
+        "check": "trixie-installer-tests",
+        "exit": 0,
+        "stdout": "{\"event\": \"v3_runtime_skipped\", \"reason\": \"No qualified package for this device/OS/Python/NumPy; original runtime retained\"}\n{\"event\": \"v3_runtime_skipped\", \"reason\": \"No qualified package for this device/OS/Python/NumPy; original runtime retained\"}\n",
+        "stderr": "test_ambiguous_and_empty_matrix_rejected (__main__.RuntimeInstallerTests.test_ambiguous_and_empty_matrix_rejected) ... ok\ntest_corrupt_artifact_is_rejected (__main__.RuntimeInstallerTests.test_corrupt_artifact_is_rejected) ... ok\ntest_invalid_manifest_does_not_touch_profile (__main__.RuntimeInstallerTests.test_invalid_manifest_does_not_touch_profile) ... ok\ntest_legacy_v1_small_rounding_allowed_but_rank_change_rejected (__main__.RuntimeInstallerTests.test_legacy_v1_small_rounding_allowed_but_rank_change_rejected) ... ok\ntest_matrix_selects_correct_os_and_python (__main__.RuntimeInstallerTests.test_matrix_selects_correct_os_and_python) ... ok\ntest_path_traversal_rejected_before_copy (__main__.RuntimeInstallerTests.test_path_traversal_rejected_before_copy) ... ok\ntest_unsupported_matrix_does_not_touch_profile (__main__.RuntimeInstallerTests.test_unsupported_matrix_does_not_touch_profile) ... ok\ntest_unsupported_target_does_not_touch_profile (__main__.RuntimeInstallerTests.test_unsupported_target_does_not_touch_profile) ... ok\ntest_v2_v3_rounding_is_rejected (__main__.RuntimeInstallerTests.test_v2_v3_rounding_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.774s\n\nOK\n"
+      }
+    ],
+    "host_profile_unchanged": true
+  },
+  "bookworm_abi": {
+    "native_sha256": "3c14dd01908f8db7c043e5d8f94d7357c53d2b3f107f1617d4b2653338aef58f",
+    "maximum_glibc": "2.34",
+    "maximum_glibcxx": "3.4.30",
+    "target_glibc": "2.36",
+    "architecture": "aarch64",
+    "python": "3.11"
+  },
+  "trixie": {
+    "native_binary_unchanged_from": "v2.17.1.post2",
+    "sha256": "150a5758b8ffdecef42d5030d91954770dd8aa717783ed857cb5ba8566278dcb",
+    "qualified_installation_checked": "2026-11-07"
+  },
+  "limitations": [
+    "Bookworm userspace on real ARM64 Zero2W with Trixie host kernel; not a fresh Bookworm SD-card install.",
+    "Cross-OS floating-point rounding is bounded and reported, not claimed bit-exact. Bookworm original/cache and NumPy1/2 comparisons must be exact.",
+    "No audio capture, end-to-end fresh OS installation, energy or performance claim is made.",
+    "No 32-bit, Python3.12 or other-board qualification."
+  ]
+}
